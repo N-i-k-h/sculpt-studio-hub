@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { DollarSign, Users, UserCheck, AlertTriangle, MessageCircle } from "lucide-react";
+import { IndianRupee, Users, UserCheck, AlertTriangle, MessageCircle } from "lucide-react";
 import { api, getDaysUntilExpiry, type Member, type Transaction, type Trainer } from "@/lib/store";
 
 export default function Dashboard() {
@@ -41,7 +41,7 @@ export default function Dashboard() {
     {
       label: "Total Revenue",
       value: `₹${totalRevenue.toLocaleString()}`,
-      icon: DollarSign,
+      icon: IndianRupee,
       change: "+12%",
     },
     {

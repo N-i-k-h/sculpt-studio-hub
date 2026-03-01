@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { UserCheck, Plus, Trash2, AlertCircle, DollarSign } from "lucide-react";
+import { UserCheck, Plus, Trash2, IndianRupee } from "lucide-react";
 import { api, type Trainer } from "@/lib/store";
 
 export default function Trainers() {
@@ -117,12 +117,6 @@ export default function Trainers() {
                     <UserCheck size={18} />
                   </div>
                   <div className="flex items-center gap-2">
-                    {isPayday && (
-                      <span className="flex items-center gap-1 px-2 py-1 rounded-full bg-warning/20 text-warning text-xs font-medium pulse-glow">
-                        <AlertCircle size={12} />
-                        Payment Due
-                      </span>
-                    )}
                     <button
                       onClick={() => deleteTrainer(tId)}
                       className="p-1.5 rounded-lg text-muted-foreground hover:text-destructive hover:bg-destructive/10 transition-colors"
@@ -135,7 +129,7 @@ export default function Trainers() {
                 <p className="text-sm text-muted-foreground mt-0.5">{t.specialty}</p>
                 <p className="text-sm text-muted-foreground">{t.phone}</p>
                 <div className="flex items-center gap-1 mt-3 text-primary font-bold">
-                  <DollarSign size={16} />
+                  <IndianRupee size={16} />
                   ₹{t.salary.toLocaleString()}/mo
                 </div>
               </div>
