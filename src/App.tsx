@@ -9,7 +9,6 @@ import Members from "@/pages/Members";
 import AddMember from "@/pages/AddMember";
 import Packages from "@/pages/Packages";
 import Trainers from "@/pages/Trainers";
-import Billing from "@/pages/Billing";
 import Reports from "@/pages/Reports";
 import NotFound from "@/pages/NotFound";
 import Login from "@/pages/Login";
@@ -42,7 +41,6 @@ const App = () => (
             <Route path="/members/new" element={<AddMember />} />
             <Route path="/packages" element={<Packages />} />
             <Route path="/trainers" element={<Trainers />} />
-            <Route path="/billing" element={<Billing />} />
             <Route path="/reports" element={<Reports />} />
           </Route>
           <Route path="*" element={<NotFound />} />

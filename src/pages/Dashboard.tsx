@@ -33,7 +33,7 @@ export default function Dashboard() {
     .sort((a, b) => a.daysLeft - b.daysLeft);
 
   const notifyWhatsApp = (member: typeof expiringMembers[0]) => {
-    const msg = `Hi ${member.name}, your plan at SCULPT FITNESS expires in ${member.daysLeft} days. Please renew soon!`;
+    const msg = `Hi ${member.name}, your plan at MUSCLE ENGINEER expires in ${member.daysLeft} days. Please renew soon!`;
     window.open(`https://wa.me/${member.phone}?text=${encodeURIComponent(msg)}`);
   };
 
@@ -62,7 +62,7 @@ export default function Dashboard() {
     <div className="space-y-8">
       <div>
         <h2 className="text-2xl font-bold text-foreground">Dashboard</h2>
-        <p className="text-muted-foreground text-sm mt-1">Overview of SCULPT FITNESS operations</p>
+        <p className="text-muted-foreground text-sm mt-1">Overview of MUSCLE ENGINEER operations</p>
       </div>
 
       {/* KPI Cards */}

@@ -83,7 +83,7 @@ export default function Billing() {
     // Header
     doc.setFontSize(22);
     doc.setFont("helvetica", "bold");
-    doc.text("SCULPT FITNESS GYM", 105, 25, { align: "center" });
+    doc.text("THE MUSCLE ENGINEER", 105, 25, { align: "center" });
     doc.setFontSize(10);
     doc.setFont("helvetica", "normal");
     doc.text("Invoice / Billing Receipt", 105, 33, { align: "center" });
@@ -113,9 +113,9 @@ export default function Billing() {
     const finalY = (doc as any).lastAutoTable?.finalY || 100;
     doc.setFontSize(9);
     doc.setTextColor(120);
-    doc.text("Thank you for choosing SCULPT FITNESS GYM!", 105, finalY + 20, { align: "center" });
+    doc.text("Thank you for choosing THE MUSCLE ENGINEER!", 105, finalY + 20, { align: "center" });
 
-    doc.save(`SCULPT_${txn.memberName.replace(/\s/g, "_")}_${txn.date}.pdf`);
+    doc.save(`TME_${txn.memberName.replace(/\s/g, "_")}_${txn.date}.pdf`);
   };
 
   return (

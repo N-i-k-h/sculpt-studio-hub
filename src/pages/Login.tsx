@@ -34,7 +34,7 @@ export default function Login() {
             <div className="glass-card w-full max-w-md p-8 space-y-6">
                 <div className="text-center space-y-2">
                     <h1 className="text-3xl font-bold text-foreground">
-                        <span className="text-primary glow-text">SCULPT</span> FITNESS
+                        <span className="text-primary glow-text">MUSCLE</span> ENGINEER
                     </h1>
                     <p className="text-muted-foreground">Admin Login</p>
                 </div>
